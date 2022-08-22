@@ -1,18 +1,26 @@
 package Productes;
 
-public class Decoracio implements Productes{
-  @Override
-  public void afegir() {
+public class Decoracio extends Productes {
 
+  private String material;
+
+  public Decoracio(double preu, String material) {
+    super(preu);
+    this.material = material;
   }
 
   @Override
-  public void retirar() {
-
+  public String afegir() {
+    return "";
   }
 
   @Override
-  public void printar() {
+  public String retirar() {
+    return "";
+  }
 
+  @Override
+  public String printar() {
+    return "";
   }
 }

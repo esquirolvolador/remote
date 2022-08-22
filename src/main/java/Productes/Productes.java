@@ -1,8 +1,14 @@
 package Productes;
 
-public interface Productes {
+public abstract class Productes {
 
-  public void afegir();
-  public void retirar();
-  public void printar();
+  private double preu;
+
+  public Productes(double preu) {
+    this.preu = preu;
+  }
+
+  public abstract String afegir();
+  public abstract String retirar();
+  public abstract String printar();
 }

@@ -1,18 +1,35 @@
 package Productes;
 
-public class Flors implements Productes{
-  @Override
-  public void afegir() {
+public class Flors extends Productes {
 
+  public Flors(double preu, String color) {
+    super(preu);
+    this.color = color;
+  }
+
+  private String color;
+
+  public String getColor() {
+    return color;
+  }
+
+  public void setColor(String color) {
+    this.color = color;
+  }
+
+
+  @Override
+  public String afegir() {
+    return "";
   }
 
   @Override
-  public void retirar() {
-
+  public String retirar() {
+    return "";
   }
 
   @Override
-  public void printar() {
-
+  public String printar() {
+    return "";
   }
 }

@@ -1,18 +1,26 @@
 package Productes;
 
-public class Arbres implements Productes{
-  @Override
-  public void afegir() {
+public class Arbres extends Productes {
 
+  private float alçada;
+
+  public Arbres(double preu, float alçada) {
+    super(preu);
+    this.alçada = alçada;
   }
 
   @Override
-  public void retirar() {
-
+  public String afegir() {
+    return "";
   }
 
   @Override
-  public void printar() {
+  public String retirar() {
+    return "";
+  }
 
+  @Override
+  public String printar() {
+    return "";
   }
 }
