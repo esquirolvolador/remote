@@ -5,11 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97375c42-57c3-4a01-8557-3aa0ddefbfe8" name="Changes" comment="commit1">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/FlowerShop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/products/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/TextFileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Productes/Arbres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Productes/Arbres.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Productes/Decoracio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Productes/Decoracio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Productes/Flors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Productes/Flors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Productes/Productes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Productes/Productes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Floristeria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Productes/Arbres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/products/Flower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Productes/Decoracio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/products/Tree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Productes/Flors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/products/Decoration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Productes/Productes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Ticket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,12 +35,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -45,6 +61,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true"
   }
 }]]></component>
