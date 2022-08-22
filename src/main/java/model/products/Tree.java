@@ -1,8 +1,9 @@
 package model.products;
 
 public class Tree extends Product {
-
-  public Tree(double prize) {
+  private double height;
+  public Tree(double prize, double height) {
     super(prize);
+    this.height = height;
   }
 }

@@ -4,23 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97375c42-57c3-4a01-8557-3aa0ddefbfe8" name="Changes" comment="commit1">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/FlowerShop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/products/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/TextFileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="97375c42-57c3-4a01-8557-3aa0ddefbfe8" name="Changes" comment="Started refactoring">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/FlowerShopController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Floristeria.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Productes/Arbres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/products/Flower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Productes/Decoracio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/products/Tree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Productes/Flors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/products/Decoration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Productes/Productes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/FlowerShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/FlowerShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/products/Decoration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/products/Decoration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/products/Flower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/products/Flower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/products/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/products/Tree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,14 +52,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -90,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661175724860</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Started refactoring">
+      <created>1661189787052</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661189787052</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,6 +106,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit1" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit1" />
+    <MESSAGE value="Started refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started refactoring" />
   </component>
 </project>

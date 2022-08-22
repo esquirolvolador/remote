@@ -1,8 +1,15 @@
 package model.products;
 
 public class Decoration extends Product {
+    public enum Material {
+        WOOD,
+        PLASTIC
+    }
 
-  public Decoration(double prize) {
-    super(prize);
-  }
+    private Material material;
+
+    public Decoration(double prize, Material material) {
+        super(prize);
+        this.material = material;
+    }
 }
