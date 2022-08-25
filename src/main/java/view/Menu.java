@@ -38,5 +38,33 @@ public class Menu {
         return option;
 
     }
+
+    public static void printCreateFlowerShopMenu() {
+        System.out.println("*********   Nueva floristería   *********");
+        System.out.println("Introduce el nombre de la floristería:");
     }
+
+    public static void printFlowerShopCreated() {
+        System.out.println("Floristería creada con éxito.");
+    }
+
+    public static void printAddTreeMenu() {
+        System.out.println("*********   Añadir árbol   *********");
+        System.out.println("Introduce la altura del árbol:");
+    }
+
+    public static void printEnterPrizePrompt(){
+        System.out.println("Introduce el precio:");
+    }
+
+    public static void printAddFlowerMenu() {
+        System.out.println("*********   Añadir flor   *********");
+        System.out.println("Introduce el color de la flor:");
+    }
+
+    public static void printAddDecorationMenu() {
+        System.out.println("*********   Añadir decoración   *********");
+        System.out.println("Introduce el material de la decoración (plástico/madera):");
+    }
+}
 

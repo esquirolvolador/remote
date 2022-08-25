@@ -1,52 +1,57 @@
 package app;
 
+import controller.FlowerShopController;
+import repository.Repository;
+import repository.TextFileRepository;
 import view.Menu;
 
 public class Main {
     public static void main(String[] args) {
 
         boolean exit = false;
+        Repository repository = new TextFileRepository();
+        FlowerShopController flowerShopController = new FlowerShopController(repository);
 
         do {
             switch (Menu.printMainMenu()) {
                 case 1:
-                    createFlowerShop();
+                    flowerShopController.createFlowerShop();
                     break;
                 case 2:
-                    addTree();
+                    flowerShopController.addTree();
                     break;
                 case 3:
-                    addFlower();
+                    flowerShopController.addFlower();
                     break;
                 case 4:
-                    addDecoration();
+                    flowerShopController.addDecoration();
                     break;
                 case 5:
-                    showAllProducts();
+                    flowerShopController.showAllProducts();
                     break;
                 case 6:
-                    removeTree();
+                    flowerShopController.removeTree();
                     break;
                 case 7:
-                    removeFlower();
+                    flowerShopController.removeFlower();
                     break;
                 case 8:
-                    removeDecoration();
+                    flowerShopController.removeDecoration();
                     break;
                 case 9:
-                    showStockByCategory();
+                    flowerShopController.showStockByCategory();
                     break;
                 case 10:
-                    showStockTotalValue();
+                    flowerShopController.showStockTotalValue();
                     break;
                 case 11:
-                    newPurchaseTicket();
+                    flowerShopController.newPurchaseTicket();
                     break;
                 case 12:
-                    showSalesHistory();
+                    flowerShopController.showSalesHistory();
                     break;
                 case 13:
-                    showSalesTotalValue();
+                    flowerShopController.showSalesTotalValue();
                     break;
                 case 0:
                     System.out.println("Gracias por utilizar la aplicación");
@@ -57,20 +62,5 @@ public class Main {
 
     }
 
-    public static void createFlowerShop() {}
-    public static void addTree() {}
-    public static void addFlower() {}
-    public static void addDecoration() {}
-    public static void showAllProducts() {}
-    public static void removeTree() {}
-    public static void removeFlower() {}
-    public static void removeDecoration() {}
-    public static void showStockByCategory() {}
-    public static void showStockTotalValue() {}
-    public static void newPurchaseTicket() {}
-    public static void showSalesHistory() {}
-    public static void showSalesTotalValue() {}
-
-
-    }
+}
 

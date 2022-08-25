@@ -53,4 +53,8 @@ public class Stock {
     public double getTotalStockValue() {
         return totalStockValue;
     }
+
+    public void printAllProducts() {
+        this.allProductsStock.forEach(System.out::println);
+    }
 }
