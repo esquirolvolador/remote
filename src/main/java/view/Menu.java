@@ -53,6 +53,7 @@ public class Menu {
         System.out.println("Introduce la altura del árbol:");
     }
 
+
     public static void printEnterPrizePrompt(){
         System.out.println("Introduce el precio:");
     }
@@ -64,6 +65,20 @@ public class Menu {
 
     public static void printAddDecorationMenu() {
         System.out.println("*********   Añadir decoración   *********");
+        System.out.println("Introduce el material de la decoración (plástico/madera):");
+    }
+
+    public static void printRemoveTreerMenu() {
+        System.out.println("*********   Eliminar árbol   *********");
+        System.out.println("Introduce el id correspondiente:");
+    }
+    public static void printRemoveFlowerMenu() {
+        System.out.println("*********   Eliminar flor   *********");
+        System.out.println("Introduce el color de la flor:");
+    }
+
+    public static void printRemoveDecorationMenu() {
+        System.out.println("*********   Eliminar decoración   *********");
         System.out.println("Introduce el material de la decoración (plástico/madera):");
     }
 }

@@ -1,12 +1,15 @@
 package controller;
 
 import model.FlowerShop;
+import model.Stock;
 import model.products.Decoration;
 import model.products.Flower;
+import model.products.Product;
 import model.products.Tree;
 import repository.Repository;
 import view.Menu;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class FlowerShopController {
@@ -73,12 +76,20 @@ public class FlowerShopController {
     }
 
     public void removeTree() {
+        Scanner scanner = new Scanner(System.in);
+        Menu.printRemoveTreerMenu();
+        this.flowerShop.showAllTrees();
+        int productId = scanner.nextInt();
+        this.flowerShop.removeProduct(this.flowerShop.findProduct(productId));
     }
 
     public void removeFlower() {
+
+
     }
 
     public void removeDecoration() {
+
     }
 
     public void showStockByCategory() {
