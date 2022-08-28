@@ -18,8 +18,8 @@ public class FlowerShop {
         this.sales = new ArrayList<>();
     }
 
-    public static FlowerShop getInstance(String name){
-        if (instance == null){
+    public static FlowerShop getInstance(String name) {
+        if (instance == null) {
             instance = new FlowerShop(name);
         }
         return instance;
@@ -33,11 +33,23 @@ public class FlowerShop {
         this.stock.removeProduct(product);
     }
 
-    public double getStockValue(){
+    public double getStockValue() {
         return this.stock.getTotalStockValue();
     }
 
     public void showAllProducts() {
         this.stock.printAllProducts();
+    }
+
+    public void showAllProductsByStockWithValues() {
+        this.stock.printAllProductsByStockWithValues();
+    }
+
+    public Stock getStock() {
+        return stock;
+    }
+
+    public String getName() {
+        return name;
     }
 }
