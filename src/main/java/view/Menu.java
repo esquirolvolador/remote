@@ -1,5 +1,8 @@
 package view;
 
+import model.Ticket;
+
+import java.util.List;
 import java.util.Scanner;
 
 public class Menu {
@@ -52,8 +55,8 @@ public class Menu {
         System.out.println("*********   Añadir árbol   *********");
         System.out.println("Introduce la altura del árbol:");
     }
-    
-    public static void printEnterPrizePrompt(){
+
+    public static void printEnterPrizePrompt() {
         System.out.println("Introduce el precio:");
     }
 
@@ -94,7 +97,7 @@ public class Menu {
         System.out.println("*********   Eliminar árbol   *********");
         System.out.println("Introduce el id correspondiente:");
     }
-    
+
     public static void printRemoveFlowerMenu() {
         System.out.println("*********   Eliminar flor   *********");
         System.out.println("Introduce el color de la flor:");
@@ -103,6 +106,15 @@ public class Menu {
     public static void printRemoveDecorationMenu() {
         System.out.println("*********   Eliminar decoración   *********");
         System.out.println("Introduce el material de la decoración (plástico/madera):");
+    }
+
+    public static void printSalesHistory(List<Ticket> sales) {
+        sales.forEach(System.out::println);
+    }
+
+    public static void printSalesTotalValue(Double value) {
+        System.out.println("*********   El valor total de las ventas ha sido " + value + "  *********");
+
     }
 }
 

@@ -69,4 +69,12 @@ public class FlowerShop {
         return this.stock.findProduct(productId);
 
     }
+
+    public List<Ticket> getSales() {
+        return sales;
+    }
+
+    public void setSales(List<Ticket> sales) {
+        this.sales = sales;
+    }
 }

@@ -119,7 +119,7 @@ public class FlowerShopController {
         do {
             Menu.printAddProductsToPurchaseMenu();
             option = scanner.nextInt();
-            switch (option){
+            switch (option) {
                 case 1:
                     addProductToTicketAndRemoveFromStock(scanner, newTicket);
                     break;
@@ -140,7 +140,9 @@ public class FlowerShopController {
     }
 
     private void addProductToTicketAndRemoveFromStock(Scanner scanner, Ticket newTicket) {
-        showStockByCategory();
+        showStockByCategoryWithValues();
+        //showStockByCategory();
+        System.out.println("Por favor, introduce id");
         int id = scanner.nextInt();
         Product product = getProductById(id);
         newTicket.addProduct(product);
@@ -152,10 +154,15 @@ public class FlowerShopController {
     }
 
     public void showSalesHistory() {
-
+        Menu.printSalesHistory(this.flowerShop.getSales());
     }
 
     public void showSalesTotalValue() {
+        double value = 0;
+        for (Ticket t : this.flowerShop.getSales()) {
+            value += t.getTotalPrize();
+        }
+        Menu.printSalesTotalValue(value);
 
     }
 
