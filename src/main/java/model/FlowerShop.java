@@ -41,6 +41,7 @@ public class FlowerShop {
         this.stock.printAllProducts();
     }
 
+ Metodos-Show-de-la-clase-FlowerShopController
     public void showAllProductsByStockWithValues() {
         this.stock.printAllProductsByStockWithValues();
     }
@@ -52,4 +53,15 @@ public class FlowerShop {
     public String getName() {
         return name;
     }
+
+    public void showAllTrees() {
+        this.stock.printTrees();
+    }
+
+    public Product findProduct(int productId) {
+        return this.stock.findProduct(productId);
+
+    }
+
+
 }

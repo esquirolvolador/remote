@@ -53,7 +53,8 @@ public class Menu {
         System.out.println("Introduce la altura del árbol:");
     }
 
-    public static void printEnterPrizePrompt() {
+
+    public static void printEnterPrizePrompt(){
         System.out.println("Introduce el precio:");
     }
 
@@ -68,6 +69,7 @@ public class Menu {
     }
 
 
+
     public static void printTotalStockValue(double stockValue) {
         System.out.println("*********   El valor total del Stock en la tienda es: " + stockValue + "  *********");
     }
@@ -78,6 +80,20 @@ public class Menu {
 
     public static void printShowProductStock(String productClass) {
         System.out.println("*********   Stock de " + productClass + " en tienda  *********");
+
+    public static void printRemoveTreerMenu() {
+        System.out.println("*********   Eliminar árbol   *********");
+        System.out.println("Introduce el id correspondiente:");
+    }
+    public static void printRemoveFlowerMenu() {
+        System.out.println("*********   Eliminar flor   *********");
+        System.out.println("Introduce el color de la flor:");
+    }
+
+    public static void printRemoveDecorationMenu() {
+        System.out.println("*********   Eliminar decoración   *********");
+        System.out.println("Introduce el material de la decoración (plástico/madera):");
+
     }
 }
 
