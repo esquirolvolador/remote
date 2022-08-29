@@ -93,17 +93,17 @@ public class Menu {
 
     public static void printRemoveTreerMenu() {
         System.out.println("*********   Eliminar árbol   *********");
-        System.out.println("Introduce el id correspondiente:");
+        System.out.println("Introduce el número de id correspondiente a eliminar:");
     }
     
     public static void printRemoveFlowerMenu() {
         System.out.println("*********   Eliminar flor   *********");
-        System.out.println("Introduce el color de la flor:");
+        System.out.println("Introduce el número de id correspondiente a eliminar:");
     }
 
     public static void printRemoveDecorationMenu() {
         System.out.println("*********   Eliminar decoración   *********");
-        System.out.println("Introduce el material de la decoración (plástico/madera):");
+        System.out.println("Introduce el número de id correspondiente a eliminar:");
     }
 
     public static void printAvaliableFlowersPhrase() {

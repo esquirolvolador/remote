@@ -1,9 +1,7 @@
 package controller;
 
 import model.FlowerShop;
-
 import model.Ticket;
-
 import model.products.Decoration;
 import model.products.Flower;
 import model.products.Product;
@@ -92,12 +90,19 @@ public class FlowerShopController {
     }
 
     public void removeFlower() {
-
-
+        Scanner scanner = new Scanner(System.in);
+        Menu.printRemoveFlowerMenu();
+        this.flowerShop.showAllFlowers();
+        int productId = scanner.nextInt();
+        this.flowerShop.removeProduct(this.flowerShop.findProduct(productId));
     }
 
     public void removeDecoration() {
-
+        Scanner scanner = new Scanner(System.in);
+        Menu.printRemoveDecorationMenu();
+        this.flowerShop.showAllDecoration();
+        int productId = scanner.nextInt();
+        this.flowerShop.removeProduct(this.flowerShop.findProduct(productId));
     }
 
     public void showStockByCategoryWithValues() {

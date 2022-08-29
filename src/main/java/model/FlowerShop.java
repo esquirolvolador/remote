@@ -65,6 +65,14 @@ public class FlowerShop {
         this.stock.printTrees();
     }
 
+    public void showAllFlowers() {
+        this.stock.printFlowers();
+    }
+
+    public void showAllDecoration() {
+        this.stock.printDecoration();
+    }
+
     public Product findProduct(int productId) {
         return this.stock.findProduct(productId);
 
