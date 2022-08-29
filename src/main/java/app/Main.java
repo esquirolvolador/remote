@@ -1,6 +1,9 @@
 package app;
 
 import controller.FlowerShopController;
+import model.products.Decoration;
+import model.products.Flower;
+import model.products.Tree;
 import repository.Repository;
 import repository.TextFileRepository;
 import view.Menu;
@@ -11,6 +14,17 @@ public class Main {
         boolean exit = false;
         Repository repository = new TextFileRepository();
         FlowerShopController flowerShopController = new FlowerShopController(repository);
+
+        //Popular datos
+        flowerShopController.createFlowerShop("Floristeria");
+        for (int i = 0; i < 5; i++) {
+            Decoration dec = new Decoration(1, Decoration.Material.PLASTIC);
+            Flower flo = new Flower(1, "blue");
+            Tree tree = new Tree(1, 100);
+            flowerShopController.getFlowerShop().addProduct(tree);
+            flowerShopController.getFlowerShop().addProduct(flo);
+            flowerShopController.getFlowerShop().addProduct(dec);
+        }
 
         do {
             switch (Menu.printMainMenu()) {
@@ -39,7 +53,7 @@ public class Main {
                     flowerShopController.removeDecoration();
                     break;
                 case 9:
-                    flowerShopController.showStockByCategory();
+                    flowerShopController.showStockByCategoryWithValues();
                     break;
                 case 10:
                     flowerShopController.showStockTotalValue();

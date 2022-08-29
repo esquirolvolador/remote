@@ -1,7 +1,11 @@
 package controller;
 
 import model.FlowerShop;
+
 import model.Ticket;
+
+import model.Stock;
+
 import model.products.Decoration;
 import model.products.Flower;
 import model.products.Product;
@@ -9,6 +13,7 @@ import model.products.Tree;
 import repository.Repository;
 import view.Menu;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class FlowerShopController {
@@ -23,6 +28,13 @@ public class FlowerShopController {
         Scanner scanner = new Scanner(System.in);
         Menu.printCreateFlowerShopMenu();
         String name = scanner.nextLine();
+        this.flowerShop = FlowerShop.getInstance(name);
+        if (this.flowerShop != null) {
+            Menu.printFlowerShopCreated();
+        }
+    }
+
+    public void createFlowerShop(String name) {
         this.flowerShop = FlowerShop.getInstance(name);
         if (this.flowerShop != null) {
             Menu.printFlowerShopCreated();
@@ -75,18 +87,28 @@ public class FlowerShopController {
     }
 
     public void removeTree() {
+        Scanner scanner = new Scanner(System.in);
+        Menu.printRemoveTreerMenu();
+        this.flowerShop.showAllTrees();
+        int productId = scanner.nextInt();
+        this.flowerShop.removeProduct(this.flowerShop.findProduct(productId));
     }
 
     public void removeFlower() {
+
+
     }
 
     public void removeDecoration() {
+
     }
 
-    public void showStockByCategory() {
+    public void showStockByCategoryWithValues() {
+        this.flowerShop.showAllProductsByStockWithValues();
     }
 
     public void showStockTotalValue() {
+        Menu.printTotalStockValue(this.flowerShop.getStockValue());
     }
 
     public void newPurchaseTicket() {
@@ -130,8 +152,16 @@ public class FlowerShopController {
     }
 
     public void showSalesHistory() {
+
     }
 
     public void showSalesTotalValue() {
+
     }
+
+    public FlowerShop getFlowerShop() {
+        return flowerShop;
+    }
+
+
 }
