@@ -78,6 +78,15 @@ public class FlowerShop {
 
     }
 
+
+    public List<Ticket> getSales() {
+        return sales;
+    }
+
+    public void setSales(List<Ticket> sales) {
+        this.sales = sales;
+        
+
     public void showStockByCategory(String category) {
         this.stock.showStockByCategory(category);
     }
@@ -92,5 +101,6 @@ public class FlowerShop {
             totalSalesValue += ticket.getTotalPrize();
         }
         return totalSalesValue;
+
     }
 }
