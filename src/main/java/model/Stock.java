@@ -88,6 +88,24 @@ public class Stock {
 
     }
 
+  public void printFlowers() {
+    for (int i=0;i<allProductsStock.size();i++){
+      if (allProductsStock.get(i).getClass().equals(Flower.class)){
+        System.out.println(allProductsStock.get(i));
+      }
+
+    }
+
+  }
+  public void printDecoration() {
+    for (int i=0;i<allProductsStock.size();i++){
+      if (allProductsStock.get(i).getClass().equals(Decoration.class)){
+        System.out.println(allProductsStock.get(i));
+      }
+
+    }
+
+  }
     public Product findProduct(int productId){
 
         boolean found = false;

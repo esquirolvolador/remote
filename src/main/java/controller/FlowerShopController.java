@@ -1,11 +1,7 @@
 package controller;
 
 import model.FlowerShop;
-
 import model.Ticket;
-
-import model.Stock;
-
 import model.products.Decoration;
 import model.products.Flower;
 import model.products.Product;
@@ -13,7 +9,6 @@ import model.products.Tree;
 import repository.Repository;
 import view.Menu;
 
-import java.util.List;
 import java.util.Scanner;
 
 public class FlowerShopController {
@@ -95,12 +90,19 @@ public class FlowerShopController {
     }
 
     public void removeFlower() {
-
-
+        Scanner scanner = new Scanner(System.in);
+        Menu.printRemoveFlowerMenu();
+        this.flowerShop.showAllFlowers();
+        int productId = scanner.nextInt();
+        this.flowerShop.removeProduct(this.flowerShop.findProduct(productId));
     }
 
     public void removeDecoration() {
-
+        Scanner scanner = new Scanner(System.in);
+        Menu.printRemoveDecorationMenu();
+        this.flowerShop.showAllDecoration();
+        int productId = scanner.nextInt();
+        this.flowerShop.removeProduct(this.flowerShop.findProduct(productId));
     }
 
     public void showStockByCategoryWithValues() {
@@ -140,7 +142,7 @@ public class FlowerShopController {
     }
 
     private void addProductToTicketAndRemoveFromStock(Scanner scanner, Ticket newTicket) {
-        showStockByCategory();
+     //   showStockByCategory();
         int id = scanner.nextInt();
         Product product = getProductById(id);
         newTicket.addProduct(product);
