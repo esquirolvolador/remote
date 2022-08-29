@@ -88,6 +88,18 @@ public class FlowerShopController {
     }
 
     public void newPurchaseTicket() {
+        Scanner scanner = new Scanner(System.in);
+        int option = -1;
+        Menu.printNewPurchaseTicketMenu();
+        do {
+            Menu.printAddProductsToPurchaseMenu();
+            option = scanner.nextInt();
+            switch (option){
+                case 1:
+
+            }
+
+        } while (option != 0);
     }
 
     public void showSalesHistory() {

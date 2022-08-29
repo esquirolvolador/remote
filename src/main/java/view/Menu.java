@@ -66,5 +66,16 @@ public class Menu {
         System.out.println("*********   Añadir decoración   *********");
         System.out.println("Introduce el material de la decoración (plástico/madera):");
     }
+
+    public static void printNewPurchaseTicketMenu() {
+        System.out.println("*********   Nueva compra   *********");
+    }
+
+    public static void printAddProductsToPurchaseMenu() {
+        System.out.printf("1 - Añadir árbol");
+        System.out.printf("2 - Añadir Flor");
+        System.out.printf("3 - Añadir Decoración");
+        System.out.printf("0 - Finalizar");
+    }
 }
 
