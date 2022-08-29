@@ -30,6 +30,13 @@ public class FlowerShopController {
         }
     }
 
+    public void createFlowerShop(String name) {
+        this.flowerShop = FlowerShop.getInstance(name);
+        if (this.flowerShop != null) {
+            Menu.printFlowerShopCreated();
+        }
+    }
+
     public void addTree() {
         Scanner scanner = new Scanner(System.in);
         Menu.printAddTreeMenu();
@@ -92,18 +99,28 @@ public class FlowerShopController {
 
     }
 
-    public void showStockByCategory() {
+    public void showStockByCategoryWithValues() {
+        this.flowerShop.showAllProductsByStockWithValues();
     }
 
     public void showStockTotalValue() {
+        Menu.printTotalStockValue(this.flowerShop.getStockValue());
     }
 
     public void newPurchaseTicket() {
     }
 
     public void showSalesHistory() {
+
     }
 
     public void showSalesTotalValue() {
+
     }
+
+    public FlowerShop getFlowerShop() {
+        return flowerShop;
+    }
+
+
 }

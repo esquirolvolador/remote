@@ -3,8 +3,8 @@ package model.products;
 public abstract class Product {
     private double prize;
     protected static int currentId = 0;
-
     private int id;
+
 
     public Product(double prize) {
         this.prize = prize;
@@ -16,10 +16,12 @@ public abstract class Product {
         return prize;
     }
 
-    public int getCurrentId(){
+    public int getCurrentId() {
         return currentId;
     }
 
+
     public int getId(){return id;}
+
 
 }
