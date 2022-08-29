@@ -7,14 +7,6 @@
     <list default="true" id="97375c42-57c3-4a01-8557-3aa0ddefbfe8" name="Changes" comment="Ticket features implemented but not fine tuned. Waiting for Show Features branch.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/FlowerShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/FlowerShopController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/FlowerShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/FlowerShop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/products/Decoration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/products/Decoration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/products/Flower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/products/Flower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/products/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/products/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/products/Tree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/controllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/controllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +72,9 @@
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -141,7 +136,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="remove_methods_class_FlowerShopController" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>

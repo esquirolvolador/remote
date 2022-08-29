@@ -76,6 +76,7 @@ public class Menu {
         System.out.println("2 - Añadir flor");
         System.out.println("3 - Añadir decoración");
         System.out.println("0 - Finalizar ticket");
+        System.out.println("Introduce una opción:");
     }
 
     public static void printTotalStockValue(double stockValue) {
@@ -111,6 +112,18 @@ public class Menu {
         System.out.println("*********   Árboles disponibles   *********");
     }public static void printAvaliableDecorationsPhrase() {
         System.out.println("*********   Decoraciones disponibles   *********");
+    }
+
+    public static void printEnterIdPrompt() {
+        System.out.println("Introduce el ID del producto:");
+    }
+
+    public static void printProductAddedCorrectly() {
+        System.out.println("Producto añadido correctamente.");
+    }
+
+    public static void printTicketCreatedCorrectly() {
+        System.out.println("Se ha creado un nuevo ticket.");
     }
 }
 

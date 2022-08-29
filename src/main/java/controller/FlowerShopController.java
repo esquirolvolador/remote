@@ -130,6 +130,7 @@ public class FlowerShopController {
                     addProductToTicketAndRemoveFromStock("Decoration", scanner, newTicket);
                     break;
                 case 0:
+                    Menu.printTicketCreatedCorrectly();
                     break;
                 default:
                     System.out.println("Por favor, introduce una opción válida");
@@ -141,10 +142,12 @@ public class FlowerShopController {
 
     private void addProductToTicketAndRemoveFromStock(String category, Scanner scanner, Ticket newTicket) {
         showStockByCategory(category);
+        Menu.printEnterIdPrompt();
         int id = scanner.nextInt();
         Product product = getProductById(id);
         newTicket.addProduct(product);
         this.flowerShop.removeProduct(product);
+        Menu.printProductAddedCorrectly();
     }
 
     private void showStockByCategory(String category) {
