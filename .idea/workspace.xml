@@ -6,13 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="97375c42-57c3-4a01-8557-3aa0ddefbfe8" name="Changes" comment="New branch with ticket implementation started">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/FlowerShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/FlowerShopController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/FlowerShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/FlowerShop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/products/Decoration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/products/Decoration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/products/Flower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/products/Flower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/products/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/products/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/products/Tree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tests/controllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/controllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +77,9 @@
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +141,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="remove_methods_class_FlowerShopController" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -157,21 +159,5 @@
     <MESSAGE value="Implemented first 5 menu options." />
     <MESSAGE value="New branch with ticket implementation started" />
     <option name="LAST_COMMIT_MESSAGE" value="New branch with ticket implementation started" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/app/Main.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/model/FlowerShop.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

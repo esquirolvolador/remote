@@ -19,5 +19,7 @@ public abstract class Product {
         return currentId;
     }
 
-    public int getId(){return id;}
+    public int getId() {
+        return id;
+    }
 }

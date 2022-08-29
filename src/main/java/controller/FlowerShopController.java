@@ -121,17 +121,21 @@ public class FlowerShopController {
         do {
             Menu.printAddProductsToPurchaseMenu();
             option = scanner.nextInt();
-            switch (option){
+            switch (option) {
                 case 1:
-                    addProductToTicketAndRemoveFromStock(scanner, newTicket);
+                    Menu.printAvaliableTreesPhrase();
+                    addProductToTicketAndRemoveFromStock("Tree", scanner, newTicket);
                     break;
                 case 2:
-                    addProductToTicketAndRemoveFromStock(scanner, newTicket);
+                    Menu.printAvaliableFlowersPhrase();
+                    addProductToTicketAndRemoveFromStock("Flower", scanner, newTicket);
                     break;
                 case 3:
-                    addProductToTicketAndRemoveFromStock(scanner, newTicket);
+                    Menu.printAvaliableDecorationsPhrase();
+                    addProductToTicketAndRemoveFromStock("Decoration", scanner, newTicket);
                     break;
                 case 0:
+                    Menu.printTicketCreatedCorrectly();
                     break;
                 default:
                     System.out.println("Por favor, introduce una opción válida");
@@ -141,12 +145,18 @@ public class FlowerShopController {
         this.flowerShop.addTicket(newTicket);
     }
 
-    private void addProductToTicketAndRemoveFromStock(Scanner scanner, Ticket newTicket) {
-     //   showStockByCategory();
+    private void addProductToTicketAndRemoveFromStock(String category, Scanner scanner, Ticket newTicket) {
+        showStockByCategory(category);
+        Menu.printEnterIdPrompt();
         int id = scanner.nextInt();
         Product product = getProductById(id);
         newTicket.addProduct(product);
         this.flowerShop.removeProduct(product);
+        Menu.printProductAddedCorrectly();
+    }
+
+    private void showStockByCategory(String category) {
+        this.flowerShop.showStockByCategory(category);
     }
 
     private Product getProductById(int id) {
@@ -154,16 +164,15 @@ public class FlowerShopController {
     }
 
     public void showSalesHistory() {
-
+        this.flowerShop.showSalesHistory();
     }
 
     public void showSalesTotalValue() {
-
+        System.out.println("El valor total de las ventas es " + this.flowerShop.showTotalSalesValue() + "€");
     }
 
     public FlowerShop getFlowerShop() {
         return flowerShop;
     }
-
 
 }

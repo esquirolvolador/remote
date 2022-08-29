@@ -5,6 +5,7 @@ import model.products.Flower;
 import model.products.Product;
 import model.products.Tree;
 import view.Menu;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -13,7 +14,7 @@ public class Stock {
     private double totalStockValue;
     private List<Product> allProductsStock;
 
- public Stock() {
+    public Stock() {
         this.totalStockValue = 0;
         this.allProductsStock = new ArrayList<>();
     }
@@ -79,15 +80,13 @@ public class Stock {
     }
 
     public void printTrees() {
-        for (int i=0;i<allProductsStock.size();i++){
-            if (allProductsStock.get(i).getClass().equals(Tree.class)){
+        for (int i = 0; i < allProductsStock.size(); i++) {
+            if (allProductsStock.get(i).getClass().equals(Tree.class)) {
                 System.out.println(allProductsStock.get(i));
             }
-
         }
 
     }
-
   public void printFlowers() {
     for (int i=0;i<allProductsStock.size();i++){
       if (allProductsStock.get(i).getClass().equals(Flower.class)){
@@ -107,7 +106,6 @@ public class Stock {
 
   }
     public Product findProduct(int productId){
-
         boolean found = false;
         int i = 0;
 
@@ -125,7 +123,12 @@ public class Stock {
 
         }
         return productFound;
+    }
 
+    public void showStockByCategory(String category) {
+        this.allProductsStock.stream()
+                .filter(product -> product.getClass().getSimpleName().equals(category))
+                .forEach(System.out::println);
     }
 }
 
