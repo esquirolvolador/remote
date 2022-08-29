@@ -76,9 +76,10 @@ public class Menu {
 
     public static void printAddProductsToPurchaseMenu() {
         System.out.println("1 - Añadir árbol");
-        System.out.println("2 - Añadir Flor");
-        System.out.println("3 - Añadir Decoración");
-        System.out.println("0 - Finalizar");
+        System.out.println("2 - Añadir flor");
+        System.out.println("3 - Añadir decoración");
+        System.out.println("0 - Finalizar ticket");
+        System.out.println("Introduce una opción:");
     }
 
     public static void printTotalStockValue(double stockValue) {
@@ -95,17 +96,37 @@ public class Menu {
 
     public static void printRemoveTreerMenu() {
         System.out.println("*********   Eliminar árbol   *********");
-        System.out.println("Introduce el id correspondiente:");
+        System.out.println("Introduce el número de id correspondiente a eliminar:");
     }
 
     public static void printRemoveFlowerMenu() {
         System.out.println("*********   Eliminar flor   *********");
-        System.out.println("Introduce el color de la flor:");
+        System.out.println("Introduce el número de id correspondiente a eliminar:");
     }
 
     public static void printRemoveDecorationMenu() {
         System.out.println("*********   Eliminar decoración   *********");
-        System.out.println("Introduce el material de la decoración (plástico/madera):");
+        System.out.println("Introduce el número de id correspondiente a eliminar:");
+    }
+
+    public static void printAvaliableFlowersPhrase() {
+        System.out.println("*********   Flores disponibles   *********");
+    }public static void printAvaliableTreesPhrase() {
+        System.out.println("*********   Árboles disponibles   *********");
+    }public static void printAvaliableDecorationsPhrase() {
+        System.out.println("*********   Decoraciones disponibles   *********");
+    }
+
+    public static void printEnterIdPrompt() {
+        System.out.println("Introduce el ID del producto:");
+    }
+
+    public static void printProductAddedCorrectly() {
+        System.out.println("Producto añadido correctamente.");
+    }
+
+    public static void printTicketCreatedCorrectly() {
+        System.out.println("Se ha creado un nuevo ticket.");
     }
 
     public static void printSalesHistory(List<Ticket> sales) {

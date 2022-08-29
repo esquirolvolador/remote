@@ -1,4 +1,4 @@
-package tests;
+/*package tests;
 
 import controller.FlowerShopController;
 import model.products.Decoration;
@@ -11,7 +11,8 @@ import org.junit.runners.MethodSorters;
 import repository.Repository;
 import repository.TextFileRepository;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @FixMethodOrder(MethodSorters.DEFAULT)
 public class controllerTest {
@@ -60,4 +61,4 @@ public class controllerTest {
     }
 
 
-}
+}*/

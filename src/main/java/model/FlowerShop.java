@@ -65,10 +65,19 @@ public class FlowerShop {
         this.stock.printTrees();
     }
 
+    public void showAllFlowers() {
+        this.stock.printFlowers();
+    }
+
+    public void showAllDecoration() {
+        this.stock.printDecoration();
+    }
+
     public Product findProduct(int productId) {
         return this.stock.findProduct(productId);
 
     }
+
 
     public List<Ticket> getSales() {
         return sales;
@@ -76,5 +85,22 @@ public class FlowerShop {
 
     public void setSales(List<Ticket> sales) {
         this.sales = sales;
+        
+
+    public void showStockByCategory(String category) {
+        this.stock.showStockByCategory(category);
+    }
+
+    public void showSalesHistory() {
+        this.sales.forEach(System.out::println);
+    }
+
+    public double showTotalSalesValue() {
+        double totalSalesValue = 0;
+        for (Ticket ticket : sales){
+            totalSalesValue += ticket.getTotalPrize();
+        }
+        return totalSalesValue;
+
     }
 }
