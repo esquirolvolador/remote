@@ -1,4 +1,4 @@
-package tests;
+/*package tests;
 
 import controller.FlowerShopController;
 import model.products.Decoration;
@@ -60,4 +60,4 @@ public class controllerTest {
     }
 
 
-}
+}*/

@@ -73,9 +73,9 @@ public class Menu {
 
     public static void printAddProductsToPurchaseMenu() {
         System.out.println("1 - Añadir árbol");
-        System.out.println("2 - Añadir Flor");
-        System.out.println("3 - Añadir Decoración");
-        System.out.println("0 - Finalizar");
+        System.out.println("2 - Añadir flor");
+        System.out.println("3 - Añadir decoración");
+        System.out.println("0 - Finalizar ticket");
     }
 
     public static void printTotalStockValue(double stockValue) {
@@ -103,6 +103,14 @@ public class Menu {
     public static void printRemoveDecorationMenu() {
         System.out.println("*********   Eliminar decoración   *********");
         System.out.println("Introduce el material de la decoración (plástico/madera):");
+    }
+
+    public static void printAvaliableFlowersPhrase() {
+        System.out.println("*********   Flores disponibles   *********");
+    }public static void printAvaliableTreesPhrase() {
+        System.out.println("*********   Árboles disponibles   *********");
+    }public static void printAvaliableDecorationsPhrase() {
+        System.out.println("*********   Decoraciones disponibles   *********");
     }
 }
 

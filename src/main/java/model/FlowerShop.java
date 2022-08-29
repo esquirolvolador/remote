@@ -69,4 +69,20 @@ public class FlowerShop {
         return this.stock.findProduct(productId);
 
     }
+
+    public void showStockByCategory(String category) {
+        this.stock.showStockByCategory(category);
+    }
+
+    public void showSalesHistory() {
+        this.sales.forEach(System.out::println);
+    }
+
+    public double showTotalSalesValue() {
+        double totalSalesValue = 0;
+        for (Ticket ticket : sales){
+            totalSalesValue += ticket.getTotalPrize();
+        }
+        return totalSalesValue;
+    }
 }

@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Ticket {
     private static int currentId = 0;
-    private int id;
+    private final int id;
     private List<Product> products;
     private double totalPrize;
 
@@ -36,6 +36,7 @@ public class Ticket {
     }
 
     private void updateTotalPrize() {
+        this.totalPrize = 0;
         this.products.forEach(product -> totalPrize += product.getPrize());
     }
 
@@ -45,8 +46,13 @@ public class Ticket {
 
     @Override
     public String toString() {
-        return "Ticket nº " + id +
-                "\n*********************\n" + products +
-                "\nTotal:" + totalPrize + "€";
+        StringBuilder stringBuilder = new StringBuilder("**************************************************\n");
+        stringBuilder.append("Ticket nº ").append(id);
+        stringBuilder.append("\n--------------------------------------------------\n");
+        this.products.forEach(product -> stringBuilder.append(product).append("\n"));
+        stringBuilder.append("Total: ").append(totalPrize).append("€");
+        stringBuilder.append("\n**************************************************");
+
+        return stringBuilder.toString();
     }
 }

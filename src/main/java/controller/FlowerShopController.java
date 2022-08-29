@@ -4,8 +4,6 @@ import model.FlowerShop;
 
 import model.Ticket;
 
-import model.Stock;
-
 import model.products.Decoration;
 import model.products.Flower;
 import model.products.Product;
@@ -13,7 +11,6 @@ import model.products.Tree;
 import repository.Repository;
 import view.Menu;
 
-import java.util.List;
 import java.util.Scanner;
 
 public class FlowerShopController {
@@ -119,15 +116,18 @@ public class FlowerShopController {
         do {
             Menu.printAddProductsToPurchaseMenu();
             option = scanner.nextInt();
-            switch (option){
+            switch (option) {
                 case 1:
-                    addProductToTicketAndRemoveFromStock(scanner, newTicket);
+                    Menu.printAvaliableTreesPhrase();
+                    addProductToTicketAndRemoveFromStock("Tree", scanner, newTicket);
                     break;
                 case 2:
-                    addProductToTicketAndRemoveFromStock(scanner, newTicket);
+                    Menu.printAvaliableFlowersPhrase();
+                    addProductToTicketAndRemoveFromStock("Flower", scanner, newTicket);
                     break;
                 case 3:
-                    addProductToTicketAndRemoveFromStock(scanner, newTicket);
+                    Menu.printAvaliableDecorationsPhrase();
+                    addProductToTicketAndRemoveFromStock("Decoration", scanner, newTicket);
                     break;
                 case 0:
                     break;
@@ -139,12 +139,16 @@ public class FlowerShopController {
         this.flowerShop.addTicket(newTicket);
     }
 
-    private void addProductToTicketAndRemoveFromStock(Scanner scanner, Ticket newTicket) {
-        showStockByCategory();
+    private void addProductToTicketAndRemoveFromStock(String category, Scanner scanner, Ticket newTicket) {
+        showStockByCategory(category);
         int id = scanner.nextInt();
         Product product = getProductById(id);
         newTicket.addProduct(product);
         this.flowerShop.removeProduct(product);
+    }
+
+    private void showStockByCategory(String category) {
+        this.flowerShop.showStockByCategory(category);
     }
 
     private Product getProductById(int id) {
@@ -152,16 +156,15 @@ public class FlowerShopController {
     }
 
     public void showSalesHistory() {
-
+        this.flowerShop.showSalesHistory();
     }
 
     public void showSalesTotalValue() {
-
+        System.out.println("El valor total de las ventas es " + this.flowerShop.showTotalSalesValue() + "€");
     }
 
     public FlowerShop getFlowerShop() {
         return flowerShop;
     }
-
 
 }
