@@ -40,4 +40,12 @@ public class FlowerShop {
     public void showAllProducts() {
         this.stock.printAllProducts();
     }
+
+    public Product getProductById(int id) {
+        return this.stock.getProductById(id);
+    }
+
+    public void addTicket(Ticket newTicket) {
+        this.sales.add(newTicket);
+    }
 }

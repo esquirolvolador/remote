@@ -72,10 +72,10 @@ public class Menu {
     }
 
     public static void printAddProductsToPurchaseMenu() {
-        System.out.printf("1 - Añadir árbol");
-        System.out.printf("2 - Añadir Flor");
-        System.out.printf("3 - Añadir Decoración");
-        System.out.printf("0 - Finalizar");
+        System.out.println("1 - Añadir árbol");
+        System.out.println("2 - Añadir Flor");
+        System.out.println("3 - Añadir Decoración");
+        System.out.println("0 - Finalizar");
     }
 }
 

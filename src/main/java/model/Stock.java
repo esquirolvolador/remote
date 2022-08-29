@@ -44,7 +44,7 @@ public class Stock {
         updateStockValue();
     }
 
-    public void updateStockValue(){
+    public void updateStockValue() {
         this.allProductsStock.forEach(product -> {
             this.totalStockValue += product.getPrize();
         });
@@ -56,5 +56,9 @@ public class Stock {
 
     public void printAllProducts() {
         this.allProductsStock.forEach(System.out::println);
+    }
+
+    public Product getProductById(int id) {
+        return this.allProductsStock.stream().filter(product -> product.getId() == id).findFirst().get();
     }
 }

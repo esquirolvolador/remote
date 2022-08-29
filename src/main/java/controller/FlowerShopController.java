@@ -1,8 +1,10 @@
 package controller;
 
 import model.FlowerShop;
+import model.Ticket;
 import model.products.Decoration;
 import model.products.Flower;
+import model.products.Product;
 import model.products.Tree;
 import repository.Repository;
 import view.Menu;
@@ -89,17 +91,42 @@ public class FlowerShopController {
 
     public void newPurchaseTicket() {
         Scanner scanner = new Scanner(System.in);
-        int option = -1;
+        Ticket newTicket = new Ticket();
+        int option;
         Menu.printNewPurchaseTicketMenu();
         do {
             Menu.printAddProductsToPurchaseMenu();
             option = scanner.nextInt();
             switch (option){
                 case 1:
-
+                    addProductToTicketAndRemoveFromStock(scanner, newTicket);
+                    break;
+                case 2:
+                    addProductToTicketAndRemoveFromStock(scanner, newTicket);
+                    break;
+                case 3:
+                    addProductToTicketAndRemoveFromStock(scanner, newTicket);
+                    break;
+                case 0:
+                    break;
+                default:
+                    System.out.println("Por favor, introduce una opción válida");
             }
 
         } while (option != 0);
+        this.flowerShop.addTicket(newTicket);
+    }
+
+    private void addProductToTicketAndRemoveFromStock(Scanner scanner, Ticket newTicket) {
+        showStockByCategory();
+        int id = scanner.nextInt();
+        Product product = getProductById(id);
+        newTicket.addProduct(product);
+        this.flowerShop.removeProduct(product);
+    }
+
+    private Product getProductById(int id) {
+        return this.flowerShop.getProductById(id);
     }
 
     public void showSalesHistory() {

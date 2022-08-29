@@ -21,6 +21,11 @@ public class Flower extends Product {
     }
 
     @Override
+    public int getId(){
+        return this.id;
+    }
+
+    @Override
     public String toString() {
         return "Flor: Stock ID: " + this.id + ", color: " + this.color + ", precio: " + this.getPrize() + " €";
     }
