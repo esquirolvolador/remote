@@ -17,11 +17,8 @@ public class Tree extends Product {
     this.height = height;
   }
 
-
-
   @Override
   public String toString() {
     return "Arbol: Stock ID: " + super.getId()+ ", altura: " + this.height + ", precio: " + this.getPrize() + " €";
   }
-
 }

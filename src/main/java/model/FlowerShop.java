@@ -41,7 +41,14 @@ public class FlowerShop {
         this.stock.printAllProducts();
     }
 
- Metodos-Show-de-la-clase-FlowerShopController
+    public Product getProductById(int id) {
+        return this.stock.getProductById(id);
+    }
+
+    public void addTicket(Ticket newTicket) {
+        this.sales.add(newTicket);
+    }
+
     public void showAllProductsByStockWithValues() {
         this.stock.printAllProductsByStockWithValues();
     }
@@ -62,6 +69,4 @@ public class FlowerShop {
         return this.stock.findProduct(productId);
 
     }
-
-
 }

@@ -1,6 +1,7 @@
 package model.products;
 
 public class Decoration extends Product {
+
     public enum Material {
         WOOD,
         PLASTIC
@@ -11,7 +12,6 @@ public class Decoration extends Product {
     public Decoration(double prize, Material material) {
         super(prize);
         this.material = material;
-
     }
 
     public Material getMaterial() {
@@ -21,8 +21,6 @@ public class Decoration extends Product {
     public void setMaterial(Material material) {
         this.material = material;
     }
-
-
 
     @Override
     public String toString() {

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97375c42-57c3-4a01-8557-3aa0ddefbfe8" name="Changes" comment="Implemented first 5 menu options.">
+    <list default="true" id="97375c42-57c3-4a01-8557-3aa0ddefbfe8" name="Changes" comment="New branch with ticket implementation started">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/FlowerShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/FlowerShopController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/FlowerShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/FlowerShop.java" afterDir="false" />
@@ -77,6 +77,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -117,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661440286938</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="New branch with ticket implementation started">
+      <created>1661766504901</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661766504901</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,7 +155,8 @@
     <MESSAGE value="commit1" />
     <MESSAGE value="Started refactoring" />
     <MESSAGE value="Implemented first 5 menu options." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented first 5 menu options." />
+    <MESSAGE value="New branch with ticket implementation started" />
+    <option name="LAST_COMMIT_MESSAGE" value="New branch with ticket implementation started" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

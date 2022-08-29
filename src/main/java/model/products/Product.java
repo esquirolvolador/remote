@@ -5,7 +5,6 @@ public abstract class Product {
     protected static int currentId = 0;
     private int id;
 
-
     public Product(double prize) {
         this.prize = prize;
         currentId += 1;
@@ -20,8 +19,5 @@ public abstract class Product {
         return currentId;
     }
 
-
     public int getId(){return id;}
-
-
 }
