@@ -5,12 +5,12 @@ import model.products.Flower;
 import model.products.Product;
 import model.products.Tree;
 import view.Menu;
-
+import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class Stock {
+public class Stock implements Serializable {
+    private static final long serialVersionUID = 1L;
     private double totalStockValue;
     private List<Product> allProductsStock;
 

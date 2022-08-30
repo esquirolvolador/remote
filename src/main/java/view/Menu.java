@@ -8,7 +8,7 @@ public class Menu {
         Scanner sc = new Scanner(System.in);
         byte option;
         final byte MIN = 0;
-        final byte MAX = 13;
+        final byte MAX = 14;
 
         do {
             System.out.println("**************************************************");
@@ -28,11 +28,12 @@ public class Menu {
             System.out.println("11 -  Nuevo ticket de compra");
             System.out.println("12 -  Mostrar el histórico de ventas");
             System.out.println("13 -  Mostrar el valor total de las ventas");
-            System.out.println(" 0 -  Salir");
+            System.out.println("14 -  Cargar floristería");
+            System.out.println(" 0 -  Guardar y salir");
 
             option = sc.nextByte();
             if (option < MIN || option > MAX) {
-                System.out.println("Escoje una opción válida");
+                System.out.println("Escoge una opción válida");
             }
         } while (option < MIN || option > MAX);
         return option;

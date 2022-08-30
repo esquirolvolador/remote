@@ -1,6 +1,9 @@
 package model.products;
 
-public abstract class Product {
+import java.io.Serializable;
+
+public abstract class Product implements Serializable {
+    private static final long serialVersionUID = 1L;
     private double prize;
     protected static int currentId = 0;
     private int id;
