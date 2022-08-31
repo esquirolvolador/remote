@@ -151,6 +151,8 @@ public class FlowerShopController {
         //showStockByCategory();
         System.out.println("Por favor, introduce id");
 
+    }
+
     private void addProductToTicketAndRemoveFromStock(String category, Scanner scanner, Ticket newTicket) {
         showStockByCategory(category);
         Menu.printEnterIdPrompt();
@@ -170,7 +172,6 @@ public class FlowerShopController {
     }
 
     public void showSalesHistory() {
-
         Menu.printSalesHistory(this.flowerShop.getSales());
     }
 
@@ -183,10 +184,9 @@ public class FlowerShopController {
         this.flowerShop.showSalesHistory();
     }
 
-    public void showSalesTotalValue() {
+    /*public void showSalesTotalValue() {
         System.out.println("El valor total de las ventas es " + this.flowerShop.showTotalSalesValue() + "€");
-
-    }
+    }*/
 
     public FlowerShop getFlowerShop() {
         return flowerShop;
