@@ -1,9 +1,15 @@
 package app;
 
 import controller.FlowerShopController;
+import model.Ticket;
+import model.products.Decoration;
+import model.products.Flower;
+import model.products.Tree;
 import repository.Repository;
 import repository.TextFileRepository;
 import view.Menu;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,7 +19,11 @@ public class Main {
         FlowerShopController flowerShopController = new FlowerShopController(repository);
 
         //Popular datos
+
         /*flowerShopController.createFlowerShop("Floristeria");
+
+        flowerShopController.createFlowerShop("Floristeria");
+
         for (int i = 0; i < 5; i++) {
             Decoration dec = new Decoration(1, Decoration.Material.PLASTIC);
             Flower flo = new Flower(1, "blue");
@@ -21,6 +31,16 @@ public class Main {
             flowerShopController.getFlowerShop().addProduct(tree);
             flowerShopController.getFlowerShop().addProduct(flo);
             flowerShopController.getFlowerShop().addProduct(dec);
+
+        }
+
+            Ticket t = new Ticket();
+            List<Ticket> sales = new ArrayList<>();
+            t.addProduct(dec);
+            t.addProduct(flo);
+            t.addProduct(tree);
+            sales.add(t);
+            flowerShopController.getFlowerShop().addTicket(t);
         }*/
 
         do {
