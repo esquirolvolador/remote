@@ -1,12 +1,12 @@
 package model;
 
-import model.products.Flower;
 import model.products.Product;
-
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FlowerShop {
+public class FlowerShop implements Serializable {
+    private static final long serialVersionUID = 1L;
     private static FlowerShop instance;
     private String name;
     private Stock stock;

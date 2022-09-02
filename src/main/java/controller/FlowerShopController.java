@@ -8,7 +8,8 @@ import model.products.Product;
 import model.products.Tree;
 import repository.Repository;
 import view.Menu;
-
+import javax.swing.*;
+import java.io.File;
 import java.util.Scanner;
 
 public class FlowerShopController {
@@ -75,7 +76,6 @@ public class FlowerShopController {
         double prize = scanner.nextDouble();
         this.flowerShop.addProduct(new Decoration(prize, decorationMaterial));
     }
-
 
     public void showAllProducts() {
         this.flowerShop.showAllProducts();
@@ -192,4 +192,37 @@ public class FlowerShopController {
         return flowerShop;
     }
 
+    public void saveFlowerShop() {
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException |
+                 UnsupportedLookAndFeelException e) {
+            throw new RuntimeException(e);
+        }
+        JFrame frame = new JFrame("Guardar floristería");
+        JFileChooser fileChooser = new JFileChooser();
+        String filePath = "";
+        if (fileChooser.showSaveDialog(frame) == JFileChooser.APPROVE_OPTION) {
+            File fileToSave = fileChooser.getSelectedFile();
+            filePath = fileToSave.getAbsolutePath();
+        }
+        this.repository.saveFlowerShop(flowerShop, filePath);
+    }
+
+    public void loadFlowerShop() {
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException |
+                 UnsupportedLookAndFeelException e) {
+            throw new RuntimeException(e);
+        }
+        JFrame frame = new JFrame("Cargar floristería");
+        JFileChooser fileChooser = new JFileChooser();
+        String filePath = "";
+        if (fileChooser.showOpenDialog(frame) == JFileChooser.APPROVE_OPTION) {
+            File fileToLoad = fileChooser.getSelectedFile();
+            filePath = fileToLoad.getAbsolutePath();
+        }
+        this.flowerShop = this.repository.loadFlowerShop(filePath);
+    }
 }

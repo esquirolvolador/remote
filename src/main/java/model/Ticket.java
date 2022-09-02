@@ -1,11 +1,12 @@
 package model;
 
 import model.products.Product;
-
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Ticket {
+public class Ticket implements Serializable {
+    private static final long serialVersionUID = 1L;
     private static int currentId = 0;
     private final int id;
     private List<Product> products;
